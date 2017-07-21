@@ -1,0 +1,245 @@
+@model IEnumerable<InternshipApplication.Models.NewFolder1.MainApplication>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentFirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentMiddleName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentLastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.wNum)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentCellPhone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentWorkPhone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentPresentAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.studentPermanentAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Degree)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Concentration)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isPartTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isSignedByStudentApplication)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dateApplicationReceivedByyDept)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsApplicationApprovedByDept)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.reasonWhyOrWhyNotApplicationIsApprovedByDept)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isApplicationFormSignedByInstructor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dataInstructorSignedApplicationForm)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsApplicationSignedByDeptHead)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dateApplicationsignedByDeptHead)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isApplicationSignedByDean)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dateApplicationSignedByDean)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isSignedByAcademicAdvisor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dataSignedByAcademicAdvisor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isSignedBySupervisorUponCompletion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dataSupervisorSignedUponCompletion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employersName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employersAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.supervisorName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.supervisorTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.supervisorEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.supervisorPhone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employmentBeginDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.employmentEndingDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.jobTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.jobResponsibilities)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentMiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.wNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentCellPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentWorkPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentPresentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentPermanentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Degree)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Concentration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isPartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isSignedByStudentApplication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateApplicationReceivedByyDept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsApplicationApprovedByDept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reasonWhyOrWhyNotApplicationIsApprovedByDept)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isApplicationFormSignedByInstructor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataInstructorSignedApplicationForm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsApplicationSignedByDeptHead)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateApplicationsignedByDeptHead)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isApplicationSignedByDean)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateApplicationSignedByDean)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isSignedByAcademicAdvisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataSignedByAcademicAdvisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isSignedBySupervisorUponCompletion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataSupervisorSignedUponCompletion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employersName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employersAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.supervisorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.supervisorTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.supervisorEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.supervisorPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employmentBeginDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employmentEndingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jobResponsibilities)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MainApplicationID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MainApplicationID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MainApplicationID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

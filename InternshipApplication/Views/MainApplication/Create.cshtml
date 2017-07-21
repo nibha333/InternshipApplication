@@ -1,0 +1,288 @@
+@model InternshipApplication.Models.NewFolder1.MainApplication
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>MainApplication</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="studentFirstName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentFirstName" class="form-control" />
+                <span asp-validation-for="studentFirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentMiddleName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentMiddleName" class="form-control" />
+                <span asp-validation-for="studentMiddleName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentLastName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentLastName" class="form-control" />
+                <span asp-validation-for="studentLastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="wNum" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="wNum" class="form-control" />
+                <span asp-validation-for="wNum" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentEmail" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentEmail" class="form-control" />
+                <span asp-validation-for="studentEmail" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentCellPhone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentCellPhone" class="form-control" />
+                <span asp-validation-for="studentCellPhone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentWorkPhone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentWorkPhone" class="form-control" />
+                <span asp-validation-for="studentWorkPhone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentPresentAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentPresentAddress" class="form-control" />
+                <span asp-validation-for="studentPresentAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="studentPermanentAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="studentPermanentAddress" class="form-control" />
+                <span asp-validation-for="studentPermanentAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Degree" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Degree" class="form-control" />
+                <span asp-validation-for="Degree" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Concentration" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Concentration" class="form-control" />
+                <span asp-validation-for="Concentration" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isPartTime" />
+                    <label asp-for="isPartTime"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isSignedByStudentApplication" />
+                    <label asp-for="isSignedByStudentApplication"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dateApplicationReceivedByyDept" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dateApplicationReceivedByyDept" class="form-control" />
+                <span asp-validation-for="dateApplicationReceivedByyDept" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="IsApplicationApprovedByDept" />
+                    <label asp-for="IsApplicationApprovedByDept"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="reasonWhyOrWhyNotApplicationIsApprovedByDept" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="reasonWhyOrWhyNotApplicationIsApprovedByDept" class="form-control" />
+                <span asp-validation-for="reasonWhyOrWhyNotApplicationIsApprovedByDept" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isApplicationFormSignedByInstructor" />
+                    <label asp-for="isApplicationFormSignedByInstructor"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dataInstructorSignedApplicationForm" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dataInstructorSignedApplicationForm" class="form-control" />
+                <span asp-validation-for="dataInstructorSignedApplicationForm" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="IsApplicationSignedByDeptHead" />
+                    <label asp-for="IsApplicationSignedByDeptHead"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dateApplicationsignedByDeptHead" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dateApplicationsignedByDeptHead" class="form-control" />
+                <span asp-validation-for="dateApplicationsignedByDeptHead" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isApplicationSignedByDean" />
+                    <label asp-for="isApplicationSignedByDean"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dateApplicationSignedByDean" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dateApplicationSignedByDean" class="form-control" />
+                <span asp-validation-for="dateApplicationSignedByDean" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isSignedByAcademicAdvisor" />
+                    <label asp-for="isSignedByAcademicAdvisor"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dataSignedByAcademicAdvisor" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dataSignedByAcademicAdvisor" class="form-control" />
+                <span asp-validation-for="dataSignedByAcademicAdvisor" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="isSignedBySupervisorUponCompletion" />
+                    <label asp-for="isSignedBySupervisorUponCompletion"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="dataSupervisorSignedUponCompletion" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="dataSupervisorSignedUponCompletion" class="form-control" />
+                <span asp-validation-for="dataSupervisorSignedUponCompletion" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employersName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employersName" class="form-control" />
+                <span asp-validation-for="employersName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employersAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employersAddress" class="form-control" />
+                <span asp-validation-for="employersAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="supervisorName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="supervisorName" class="form-control" />
+                <span asp-validation-for="supervisorName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="supervisorTitle" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="supervisorTitle" class="form-control" />
+                <span asp-validation-for="supervisorTitle" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="supervisorEmail" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="supervisorEmail" class="form-control" />
+                <span asp-validation-for="supervisorEmail" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="supervisorPhone" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="supervisorPhone" class="form-control" />
+                <span asp-validation-for="supervisorPhone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employmentBeginDate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employmentBeginDate" class="form-control" />
+                <span asp-validation-for="employmentBeginDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="employmentEndingDate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="employmentEndingDate" class="form-control" />
+                <span asp-validation-for="employmentEndingDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="jobTitle" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="jobTitle" class="form-control" />
+                <span asp-validation-for="jobTitle" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="jobResponsibilities" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="jobResponsibilities" class="form-control" />
+                <span asp-validation-for="jobResponsibilities" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
