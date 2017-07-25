@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InternshipApplication.Models;
 using InternshipApplication.Models.NewFolder1;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InternshipApplication.Controllers
 {
+    [Authorize]
     public class MainApplicationController : Controller
     {
         private readonly InternshipApplicationContext _context;
